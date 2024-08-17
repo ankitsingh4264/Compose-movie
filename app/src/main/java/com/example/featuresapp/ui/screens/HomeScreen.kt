@@ -1,6 +1,5 @@
 package com.example.featuresapp.ui.screens
 
-import android.provider.Settings.Global.getString
 import androidx.compose.animation.AnimatedVisibilityScope
 import androidx.compose.animation.ExperimentalSharedTransitionApi
 import androidx.compose.animation.SharedTransitionScope
@@ -17,8 +16,6 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
-import androidx.lifecycle.viewmodel.compose.viewModel
-import androidx.navigation.NavController
 import com.example.featuresapp.R
 import com.example.featuresapp.data.Result
 import com.example.featuresapp.ui.views.MovieVerticalList
