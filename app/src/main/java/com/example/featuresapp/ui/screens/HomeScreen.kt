@@ -32,7 +32,7 @@ fun SharedTransitionScope.HomeScreen(
     viewModel: SearchViewModel,
     animatedVisibilityScope: AnimatedVisibilityScope
 ) {
-    val navController = appNavController.current
+    val navController = LocalAppNavController.current
     Column(
         modifier
     ) {

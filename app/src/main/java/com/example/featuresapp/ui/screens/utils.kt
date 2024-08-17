@@ -4,7 +4,7 @@ import androidx.compose.runtime.staticCompositionLocalOf
 import androidx.navigation.NavHostController
 
 
-val appNavController = staticCompositionLocalOf<NavHostController> {
+val LocalAppNavController = staticCompositionLocalOf<NavHostController> {
     error("No NavController provided")
 }
 

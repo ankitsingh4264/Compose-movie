@@ -37,7 +37,7 @@ fun SharedTransitionScope.MovieDetailScreen(
     movieModel: MovieModel?,
     animatedVisibilityScope: AnimatedContentScope
 ) {
-    val navController = appNavController.current
+    val navController = LocalAppNavController.current
     Column(
         modifier
             .background(color = Color.White)

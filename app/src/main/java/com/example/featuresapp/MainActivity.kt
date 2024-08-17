@@ -24,7 +24,7 @@ import androidx.navigation.compose.rememberNavController
 import com.example.featuresapp.ui.screens.HomeScreen
 import com.example.featuresapp.ui.screens.MovieDetailScreen
 import com.example.featuresapp.ui.screens.Screens
-import com.example.featuresapp.ui.screens.appNavController
+import com.example.featuresapp.ui.screens.LocalAppNavController
 import com.example.featuresapp.ui.theme.FeaturesAppTheme
 
 import com.example.featuresapp.viewmodel.SearchViewModel
@@ -81,7 +81,7 @@ class MainActivity : ComponentActivity() {
         val navController = rememberNavController()
         SharedTransitionLayout {
 
-            CompositionLocalProvider(value = appNavController provides navController) {
+            CompositionLocalProvider(value = LocalAppNavController provides navController) {
 
                 NavHost(
                     navController = navController,
